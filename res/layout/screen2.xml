@@ -121,6 +121,12 @@
             android:text="="
             android:id="@+id/btnEqual" android:layout_below="@+id/btnSign" android:layout_alignStart="@+id/btnSign"
             android:width="95dp" android:height="100dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backspace"
+            android:id="@+id/btnBksp" android:layout_below="@+id/txtDisplay" android:layout_alignEnd="@+id/btnSub"
+            android:width="190dp"/>
 
 
 </RelativeLayout>

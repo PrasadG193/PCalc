@@ -80,6 +80,8 @@ public class Screen2 extends Activity implements View.OnClickListener{
         Button bmul= (Button) findViewById(R.id.btnMulti);
         bmul.setOnClickListener((android.view.View.OnClickListener) this);
 
+        Button bbk= (Button) findViewById(R.id.btnBksp);
+        bbk.setOnClickListener((android.view.View.OnClickListener) this);
 
     }
 
@@ -166,6 +168,12 @@ public class Screen2 extends Activity implements View.OnClickListener{
             num1=Double.parseDouble(num);
             num1=(-1)*num1;
             num=(num1).toString();
+
+        }
+
+
+        if((v.getId()==R.id.btnBksp)&&(!num.equals(""))) {
+            num=num.substring(0,num.length()-1);
 
         }
 
